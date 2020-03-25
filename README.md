@@ -9,5 +9,11 @@ Recipe app api source code
 ``docker build .`` [Doc Link](https://docs.docker.com/engine/reference/builder/) 
 
 ``docker-compose build`` // this will build our image using docker-compose config
+
 ``docker-compose run service_name sh -c "django-admin.py startproject app ."
- i.e docker-compose run app sh -c "django-admin.py startproject app ."``  // creating Django project using a docker configuration 
+ i.e docker-compose run app sh -c "django-admin.py startproject app ."``  // creating Django project using a docker configuration
+ 
+ - [Travis](https://travis-ci.org/) : Tool for continuous integration  that let us automate some of the tests and checks on our project every time 
+ we push it to github.
+ 
+ - Travis CI config file is the file that tells travis what to do every time we push the change to our project.
